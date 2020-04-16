@@ -327,22 +327,19 @@
                         </button>
                         <!-- The Modal -->
                         <div class="modal" id="modalTacoCat">
-                            <div class="modal-dialog">
+                            <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <!-- Modal Header -->
-                                    <div class="modal-header">
-                                        <!--<h4 class="modal-title">Fizz-Buzz</h4>-->
-                                        <div class="row">
-                                            <div class="col">
-                                                <h2>Taco Cat</h2>
-                                                <h4>Palidrome is a word, number, phrase or other characters which reads the same forwards or backwards.</h4>
-                                            </div>
-                                        </div>
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    </div>
                                     <!-- Modal body -->
                                     <div class="modal-body">
                                         <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                    <h2>Taco Cat</h2>
+                                                    <h4>Palidrome is a word, number, phrase or other characters which reads the same forwards or backwards.</h4>
+                                                </div>
+                                            </div>
                                             <div class="row">
                                                 <div class="col text-center h2">Taco Cat Exercise</div>
                                             </div>
@@ -354,6 +351,9 @@
                                                     <button id="btnTacoCat" class="btn btn-success">Enlighten Me</button>
                                                 </div>
                                                 <div class="col">
+                                                    <button class="btn btn-primary btn-wide" id="btnShowTacoCat">Show Code</button>
+                                                </div>
+                                                <div class="col">
                                                     <button id="btnTacoCatClear" class="btn btn-danger">Clear Text</button>
                                                 </div>
                                             </div>
@@ -362,11 +362,31 @@
                                                     <p id="tcOutput" class="clearMe"></p>
                                                 </div>
                                             </div>
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div id="TacoCatCode">
+                                                        <pre class="brush: js">
+                                                          let word = String($("#txtTacoCat").val()).toLowerCase();
+                                                          var revWord = "";
+
+                                                         for (var loop = word.length - 1; loop >= 0; loop--) {
+                                                         revWord += word[loop];
+                                                         }
+
+                                                         $("#tcOutput").text(`The reverse of ${word} is ${revWord}. `);
+                                                         if (word === revWord)
+                                                         $("#tcOutput").append(`Therefore ${word} is a Palidrome`);
+                                                         else
+                                                         $("#tcOutput").append(`Therefore ${word} is not a Palidrome`);
+                                                        </pre>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                         <!-- Modal footer -->
-                                        <div class="modal-footer">
+                                        <!--<div class="modal-footer">
                                             <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                                        </div>
+                                        </div>-->
                                     </div>
                                 </div>
                             </div>
@@ -566,23 +586,53 @@
                                             <div class="col">
                                                 <div id="SunsetCode">
                                                     <pre class="brush: js">
-                                            function SunsetHills(buildings) {
-                                            //Set tallest to the smallest possible number
-                                            let tallest = Number.MIN_VALUE;
+                                                    let myArray = [];
+                                                    myArray.push(Number($("#bld1").val()));
+                                                    myArray.push(Number($("#bld2").val()));
+                                                    myArray.push(Number($("#bld3").val()));
+                                                    myArray.push(Number($("#bld4").val()));
+                                                    myArray.push(Number($("#bld5").val()));
+                                                    myArray.push(Number($("#bld6").val()));
 
-                                            //Here I want to build a new array that contains just the building that can see the sunset
-                                            let sunsetViews = new Array();
+                                                    var errorMsg = "";
+                                                    for (var index = 0; index < myArray.length; index++) {
+                                                    if (isNaN(myArray[index])) {
+                                                    var value = $(`#hillsInput${index + 1}`).val();
+                                                    errorMsg += `Your input in position ${index + 1}: ${value} is bad and needs to be fixed \n\r`;
+                                                    $(`#hillsInput${index + 1}`).val("");
+                                                    }
+                                                    }
+                                                    if (errorMsg !== "") {
+                                                    alert(errorMsg);
+                                                    return
+                                                    }
 
-                                            for (var index = 0; index < buildings.length; index++) {
-                                                if (buildings[index] > tallest) {
-                                                    tallest = buildings[index];
-                                                    sunsetViews.push(`The Building in position ${index} with height ${tallest} can see the sunset. <br>`);
-                                                }
-                                            }
-                                            return sunsetViews.join("");
-                                           }
+                                                    let tallest = myArray[0];
+                                                    let happy = "What a beautiful sight";
+                                                    let sad = "Sorry you came up short";
+                                                    let newArray = [];
+    
+                                                    newArray.push(happy);
 
-                                           </pre>
+                                                    for (var index = 1; index < myArray.length; index++) {
+
+                                                    if (myArray[index] > tallest) {
+                                                    tallest = myArray[index];
+                                                    newArray.push(happy);
+                                                    }
+                                                    else {
+                                                    newArray.push(sad);
+                                                    }
+                                                    };
+
+                                                    $("#result1").html(newArray[0])
+                                                    $("#result2").html(newArray[1])
+                                                    $("#result3").html(newArray[2])
+                                                    $("#result4").html(newArray[3])
+                                                    $("#result5").html(newArray[4])
+                                                    $("#result6").html(newArray[5])
+
+                                                     </pre>
                                                 </div>
                                             </div>
                                         </div>

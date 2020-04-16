@@ -42,7 +42,8 @@ $("#btnClearSOAF").on("click", function () {
     $("#soafOutput").text("");
 });
 
-c
+$("#SOAFCode").hide();
+
 $("#btnShowSOAF").on("click", function () {
     //CHECK THIS OUT...
     //Here I am using the built in toggle function to switch my div from visible to hidden
