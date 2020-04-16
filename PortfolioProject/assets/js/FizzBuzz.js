@@ -65,3 +65,12 @@ function DisplayFizzBuzzResults(fizz, buzz) {
     document.getElementById("output").innerHTML = output;
 
 };
+
+$("#FizzBuzzCode").hide();
+
+
+$("#btnShowFizzBuzz").on("click", function () {
+    $("#FizzBuzzCode").toggle();
+    let btnText = $(this).text();
+    $(this).text($(this).text().startsWith("Show") ? btnText.replace("Show", "Hide") : btnText.replace("Hide", "Show"));
+});
