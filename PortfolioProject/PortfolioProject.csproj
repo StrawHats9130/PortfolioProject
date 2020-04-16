@@ -163,6 +163,7 @@
     <Content Include="assets\vendor\owl.carousel\LICENSE" />
     <Content Include="assets\vendor\owl.carousel\README.md" />
     <None Include="packages.config" />
+    <None Include="Properties\PublishProfiles\Yaremab-Portfolio - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
