@@ -1,4 +1,5 @@
-﻿$("#btnSOAF").on("click", function () {
+﻿
+$("#btnSOAF").on("click", function () {
     let k = Number($("#k").val());
 
     let myArray = new Array();
@@ -41,12 +42,11 @@ $("#btnClearSOAF").on("click", function () {
     $("#soafOutput").text("");
 });
 
-$("#hillsCode").hide();
-
+c
 $("#btnShowSOAF").on("click", function () {
     //CHECK THIS OUT...
     //Here I am using the built in toggle function to switch my div from visible to hidden
-    $("#hillsCode").toggle();
+    $("#SOAFCode").toggle();
 
     //CHECK THIS OUT...
     //Here I am using a ternary operator to determine what the button text should be

@@ -56,8 +56,11 @@ $("#btnClearHills").on("click", function () {
     $(".hillsOutput").text("");
 });
 
+$("#SunsetCode").hide();
+
+
 $("#btnShowHills").on("click", function () {
-    $("#hillsCode").toggle();
+    $("#SunsetCode").toggle();
     let btnText = $(this).text();
     $(this).text($(this).text().startsWith("Show") ? btnText.replace("Show", "Hide") : btnText.replace("Hide", "Show"));
 });
