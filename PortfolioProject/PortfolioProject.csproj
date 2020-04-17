@@ -67,6 +67,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="assets\css\myStyle.css" />
     <Content Include="assets\css\shCore.css" />
     <Content Include="assets\css\shCoreMidnight.css" />
     <Content Include="assets\css\style.css" />
@@ -75,6 +76,11 @@
     <Content Include="assets\img\footer-bg.jpg" />
     <Content Include="assets\img\hero-bg.jpg" />
     <Content Include="assets\img\me.jpg" />
+    <Content Include="assets\img\MyPics\landscape.jpg" />
+    <Content Include="assets\img\MyPics\MyPic-1.jpg" />
+    <Content Include="assets\img\MyPics\MyPic-2.jpg" />
+    <Content Include="assets\img\MyPics\MyPic-3.png" />
+    <Content Include="assets\img\MyPics\MyPicPort.jpg" />
     <Content Include="assets\img\portfolio\portfolio-1.jpg" />
     <Content Include="assets\img\portfolio\portfolio-2.jpg" />
     <Content Include="assets\img\portfolio\portfolio-3.jpg" />
@@ -85,7 +91,6 @@
     <Content Include="assets\img\portfolio\portfolio-8.jpg" />
     <Content Include="assets\img\portfolio\portfolio-9.jpg" />
     <Content Include="assets\img\testimonials-bg.jpg" />
-    <Content Include="assets\img\testimonials\testimonials-1.jpg" />
     <Content Include="assets\img\testimonials\testimonials-2.jpg" />
     <Content Include="assets\img\testimonials\testimonials-3.jpg" />
     <Content Include="assets\img\testimonials\testimonials-4.jpg" />
