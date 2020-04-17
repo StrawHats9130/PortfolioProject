@@ -102,7 +102,7 @@
                                     </ul>
                                 </div>
                                 <div class="row">
-                                    <div class="col " >
+                                    <div class="col ">
                                         <p class="text-danger text-"> Some information about me. And I want to center it.</p>
                                     </div>
                                 </div>
@@ -140,7 +140,8 @@
                                     </div>
                                 </div>
                             </div>-->
-                        </div><!-- End .content-->
+                        </div>
+                        <!-- End .content-->
                         <!--div class="skills-content pl-lg-4">
                             <div class="progress">
                                 <span class="skill">HTML <i class="val"></i></span>
@@ -265,20 +266,97 @@
                                 <div class="modal-content">
 
                                     <!-- Modal Header -->
-                                    <div class="modal-header">
-                                        <!--<h4 class="modal-title">Fizz-Buzz</h4>-->
+                                    <!--<div class="modal-header">
+                                        <h4 class="modal-title">Fizz-Buzz</h4>
                                         <div class="row">
                                             <div class="col">
-                                                <h2>FIZZBUZZ</h2>
-                                                <h2>Fizz Buzz: A Coding Challenge.</h2>
                                             </div>
                                         </div>
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    </div>
-
+                                    </div>-->
                                     <!-- Modal body -->
                                     <div class="modal-body">
+
                                         <div class="row">
+                                            <div class="col">
+
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                                        <h2>FIZZBUZZ</h2>
+                                                        <h2>Give us 2 numbers and we can check to see if they are multiples of any number betwwen 1 -100</h2>
+
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <input type="number" id="fizz" class="border clearMe" placeholder="Enter Number Fizz" />
+
+                                                    </div>
+                                                    <div class="col">
+                                                        <input type="number" class="border clearMe" id="buzz" placeholder="Enter Number Buzz" />
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <p id="output"></p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <button id="bntBuzzIt" class="bnt bnt-success bnt-wide ">Buzz It</button>
+                                                    </div>
+                                                    <div class="col">
+                                                        <button class="btn btn-primary btn-wide" id="btnShowFizzBuzz">Show Code</button>
+                                                    </div>
+                                                    <div class="col">
+                                                        <button class="btn btn-danger btn-wide" id="btnClearFizzBuzz">Clearme</button>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <div id="FizzBuzzCode">
+                                                            <pre class="brush: js">
+                                                         function FindFizzBuzz(fizz, buzz) {
+                                                         //Array.foreach()
+                                                         //var fizzBuzz = [];
+                                                         let fizzBuzz = "";
+    
+                                                         for (i = 1; i <= 100; i++) {
+                                                         if (i % fizz == 0 && i % buzz == 0) {
+                                                         //add FizzBuzz to Array
+                                                         // fizzBuzz.push("FizzBuzz");
+                                                         fizzBuzz += "FizzBuzz ";
+                                                         }
+                                                         else if (i % fizz == 0) {
+                                                         //add fizz to array
+                                                         //fizzBuzz.push("Fizz");
+                                                         fizzBuzz += "Fizz ";
+                                                         }
+                                                         else if (i % buzz == 0) {
+                                                         //Add buzz to array
+                                                         //fizzBuzz.push("buzz");
+                                                         fizzBuzz += "buzz ";
+                                                         }
+                                                         else if (i % fizz != 0 && i % buzz != 0) {
+                                                         //Add "i" to array
+                                                         //fizzBuzz.push(toString(i));
+                                                         fizzBuzz += i + " ";
+                                                         }
+
+                                                         }
+                                                         return fizzBuzz;
+                                                         };
+                                                            </pre>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+
+
+                                        <!--<div class="row">
                                             <div class="col">
                                                 <div class="row">
                                                     <div class="col">
@@ -319,7 +397,7 @@
                                                          //Array.foreach()
                                                          //var fizzBuzz = [];
                                                          let fizzBuzz = "";
-    
+
                                                          for (i = 1; i <= 100; i++) {
                                                          if (i % fizz == 0 && i % buzz == 0) {
                                                          //add FizzBuzz to Array
@@ -351,8 +429,7 @@
                                                 </div>
                                             </div>
 
-                                        </div>
-
+                                        </div>-->
                                         <!-- Modal footer -->
 
 
@@ -575,53 +652,54 @@
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <!-- Modal Header -->
-                                    <div class="modal-header">
-                                        <!--<h4 class="modal-title">Fizz-Buzz</h4>-->
+                                    <!--<div class="modal-header">
+                                        <h4 class="modal-title">Fizz-Buzz</h4>
+                                    </div>
+                                     Modal body--> 
+                                    <div class="modal-body">
                                         <div class="row ">
                                             <div class="col">
+                                                <button type="button" class="close" data-dismiss="modal">&times;</button>
                                                 <h class="text-center">Sun Set Hills</h>
+                                                <p>Give the heights of 6 building to see if you can see the sunset from left to right.</p>
 
                                             </div>
                                         </div>
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    </div>
-                                    <!-- Modal body -->
-                                    <div class="modal-body">
                                         <div class="row">
                                             <div class="col">
-                                                <input type="text" id="bld1" class="form-control clearMe numOnly" placeholder="Building Height 1" />
+                                                <input type="text" id="bld1" class="form-control clearSun numOnly" placeholder="Height 1" />
                                                 <p id="result1" class="hillsOutput"></p>
                                             </div>
                                             <div class="col">
-                                                <input type="text" id="bld2" class="form-control clearMe numOnly" placeholder="Building Height 2" />
+                                                <input type="text" id="bld2" class="form-control clearSun numOnly" placeholder="Height 2" />
                                                 <p id="result2" class="hillsOutput"></p>
                                             </div>
                                             <div class="col">
-                                                <input type="number" id="bld3" class="form-control clearMe numOnly" placeholder="Building Height 3" />
+                                                <input type="text" id="bld3" class="form-control clearSun numOnly" placeholder="Height 3" />
                                                 <p id="result3" class="hillsOutput"></p>
                                             </div>
                                             <div class="col">
-                                                <input type="number" id="bld4" class="form-control clearMe numOnly" placeholder="Building </br> Height 4" />
+                                                <input type="text" id="bld4" class="form-control clearSun numOnly" placeholder="Height 4" />
                                                 <p id="result4" class="hillsOutput"></p>
                                             </div>
                                             <div class="col">
-                                                <input type="number" class="form-control clearMe numOnly " id="bld5" placeholder="Building Height 5" />
+                                                <input type="text" class="form-control clearSun numOnly " id="bld5" placeholder="Height 5" />
                                                 <p id="result5" class="hillsOutput"></p>
                                             </div>
                                             <div class="col">
-                                                <input type="number" id="bld6" class="form-control clearMe numOnly" placeholder="Building Height 6" />
+                                                <input type="text" id="bld6" class="form-control clearSun numOnly" placeholder="Height 6" />
                                                 <p id="result6" class="hillsOutput"></p>
                                             </div>
                                         </div>
                                         <div class="row">
-                                            <div class="col ">
-                                                <button id="bntSun" class="bnt bnt-succes ">Where Can I See The Sun</button>
+                                            <div class="col-5 ">
+                                                <button  class="btn btn-outline-success bnt-wide " id="bntSun" >Where Can I See The Sun</button>
                                             </div>
                                             <div class="col">
-                                                <button class="btn btn-success btn-wide" id="btnShowHills">Show Code</button>
+                                                <button class="btn btn-outline-primary btn-wide" id="btnShowHills">Show Code</button>
                                             </div>
                                             <div class="col">
-                                                <button class="btn btn-danger btn-wide" id="btnClearHills">Clear All</button>
+                                                <button class="btn btn-outline-danger btn-wide" id="btnClearHills">Clear All</button>
                                             </div>
                                         </div>
 

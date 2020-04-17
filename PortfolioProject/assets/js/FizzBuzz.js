@@ -74,3 +74,8 @@ $("#btnShowFizzBuzz").on("click", function () {
     let btnText = $(this).text();
     $(this).text($(this).text().startsWith("Show") ? btnText.replace("Show", "Hide") : btnText.replace("Hide", "Show"));
 });
+
+$("#btnClearFizzBuzz").on("click", function () {
+    $(".clearMe").val("");
+    $("#output").text("");
+});

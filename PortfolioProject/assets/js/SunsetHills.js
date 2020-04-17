@@ -13,9 +13,9 @@ $("#bntSun").on("click", function () {
     var errorMsg = "";
     for (var index = 0; index < myArray.length; index++) {
         if (isNaN(myArray[index])) {
-            var value = $(`#hillsInput${index + 1}`).val();
-            errorMsg += `Your input in position ${index + 1}: ${value} is bad and needs to be fixed \n\r`;
-            $(`#hillsInput${index + 1}`).val("");
+            var value = $(`#bld${index + 1}`).val();
+            errorMsg += `Your input in position ${index + 1} "${value}" is bad and needs to be fixed \n\r`;
+            $(`#bld${index + 1}`).val("");
         }
     }
     if (errorMsg !== "") {
@@ -52,7 +52,7 @@ $("#bntSun").on("click", function () {
 
 
 $("#btnClearHills").on("click", function () {
-    $(".clearMe").val("");
+    $(".clearSun").val("");
     $(".hillsOutput").text("");
 });
 

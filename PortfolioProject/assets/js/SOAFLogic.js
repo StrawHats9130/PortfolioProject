@@ -9,6 +9,19 @@ $("#btnSOAF").on("click", function () {
     myArray.push(Number($("#soafInput4").val()));
     myArray.push(Number($("#soafInput5").val()));
 
+    var errorMsg = "";
+    for (var index = 0; index < myArray.length; index++) {
+        if (isNaN(myArray[index]) || isNaN(k) || k==0 ){
+            var value = $(`#hillsInput${index + 1}`).val();
+            errorMsg += `Your input in position ${index + 1}: ${value} is bad and needs to be fixed \n\r`;
+            $(`#hillsInput${index + 1}`).val("");
+        }
+    }
+    if (errorMsg !== "") {
+        alert(errorMsg);
+        return
+    }
+
     //k = 14
     //15 6 8 9 4
 
