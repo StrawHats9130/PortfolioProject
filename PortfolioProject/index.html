@@ -28,7 +28,7 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/myStyle.css" rel="stylesheet" />
-
+    <!--<link href="Content/sweetalert.css" rel="stylesheet" />-->
 
     <!-- =======================================================
     * Template Name: Laura - v2.0.0
@@ -287,6 +287,7 @@
 
                                                     </div>
                                                 </div>
+                                                <br />
                                                 <div class="row">
                                                     <div class="col">
                                                         <input type="number" id="fizz" class="border clearMe" placeholder="Enter Number Fizz" />
@@ -301,15 +302,16 @@
                                                         <p id="output"></p>
                                                     </div>
                                                 </div>
+                                                <br />
                                                 <div class="row">
                                                     <div class="col">
-                                                        <button id="bntBuzzIt" class="bnt bnt-success bnt-wide ">Buzz It</button>
+                                                        <button id="bntBuzzIt" class="btn btn-outline-success bnt-wide ">Buzz It</button>
                                                     </div>
                                                     <div class="col">
-                                                        <button class="btn btn-primary btn-wide" id="btnShowFizzBuzz">Show Code</button>
+                                                        <button class="btn btn-outline-dark btn-wide" id="btnShowFizzBuzz">Show Code</button>
                                                     </div>
                                                     <div class="col">
-                                                        <button class="btn btn-danger btn-wide" id="btnClearFizzBuzz">Clearme</button>
+                                                        <button class="btn btn-outline-danger btn-wide" id="btnClearFizzBuzz">Clear Me</button>
                                                     </div>
                                                 </div>
                                                 <div class="row">
@@ -356,80 +358,7 @@
                                         </div>
 
 
-                                        <!--<div class="row">
-                                            <div class="col">
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <p> Enter a number:</p>
-                                                    </div>
-                                                    <div class="col">
-                                                        <input type="number" id="fizz" class="border" />
-                                                    </div>
-                                                    <div class="col"></div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <p>Enter another number:</p>
-                                                    </div>
-                                                    <div class="col">
-                                                        <input type="number" id="buzz" />
-                                                    </div>
-                                                    <div class="col"></div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <button id="bntBuzzIt" class="bnt bnt-danger ">Buzz It</button>
-                                                    </div>
-                                                    <div class="col">
-                                                        <button class="btn btn-primary btn-wide" id="btnShowFizzBuzz">Show Code</button>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col text-center">
-                                                        <p id="output"></p>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <div id="FizzBuzzCode">
-                                                            <pre class="brush: js">
-                                                         function FindFizzBuzz(fizz, buzz) {
-                                                         //Array.foreach()
-                                                         //var fizzBuzz = [];
-                                                         let fizzBuzz = "";
-
-                                                         for (i = 1; i <= 100; i++) {
-                                                         if (i % fizz == 0 && i % buzz == 0) {
-                                                         //add FizzBuzz to Array
-                                                         // fizzBuzz.push("FizzBuzz");
-                                                         fizzBuzz += "FizzBuzz ";
-                                                         }
-                                                         else if (i % fizz == 0) {
-                                                         //add fizz to array
-                                                         //fizzBuzz.push("Fizz");
-                                                         fizzBuzz += "Fizz ";
-                                                         }
-                                                         else if (i % buzz == 0) {
-                                                         //Add buzz to array
-                                                         //fizzBuzz.push("buzz");
-                                                         fizzBuzz += "buzz ";
-                                                         }
-                                                         else if (i % fizz != 0 && i % buzz != 0) {
-                                                         //Add "i" to array
-                                                         //fizzBuzz.push(toString(i));
-                                                         fizzBuzz += i + " ";
-                                                         }
-
-                                                         }
-                                                         return fizzBuzz;
-                                                         };
-                                                        </pre>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                                        </div>-->
+                                       
                                         <!-- Modal footer -->
 
 
@@ -655,12 +584,12 @@
                                     <!--<div class="modal-header">
                                         <h4 class="modal-title">Fizz-Buzz</h4>
                                     </div>
-                                     Modal body--> 
+                                     Modal body-->
                                     <div class="modal-body">
                                         <div class="row ">
                                             <div class="col">
                                                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                <h class="text-center">Sun Set Hills</h>
+                                                <h1 class=" SunSetHeader ">Sun Set Hills:</h1>
                                                 <p>Give the heights of 6 building to see if you can see the sunset from left to right.</p>
 
                                             </div>
@@ -693,7 +622,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-5 ">
-                                                <button  class="btn btn-outline-success bnt-wide " id="bntSun" >Where Can I See The Sun</button>
+                                                <button class="btn btn-outline-success bnt-wide " id="bntSun">Where Can I See The Sun</button>
                                             </div>
                                             <div class="col">
                                                 <button class="btn btn-outline-primary btn-wide" id="btnShowHills">Show Code</button>
@@ -968,6 +897,9 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <!--<script src="Scripts/sweetalert.min.js"></script>-->
+    <!--Sweet Alert 2-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
 
     <!--Challesges JS Files-->
     <script src="assets/js/SunsetHills.js"></script>

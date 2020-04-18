@@ -10,6 +10,28 @@ $("#bntSun").on("click", function () {
     myArray.push(Number($("#bld5").val()));
     myArray.push(Number($("#bld6").val()));
 
+    '<span class = "Fizz"> ${index + 1} </span>'
+    var errorMsg = "";
+    var valid = true;
+
+    for (let index = 0; index < myArray.length; index++) {
+        if (isNaN(myArray[index])) {
+            var value = $(`#bld${index + 1}`).val();
+            errorMsg += `Your input in height  <span class = "SunsetError"> ${index + 1} of ${value} </span> is bad and needs to be fixed <br>`;
+            $(`#bld${index + 1}`).val("");
+            valid = false;
+        }
+    }
+
+    if (!valid) {
+        Swal.fire({
+            icon: 'error',
+            title: 'Input Validation failed',
+            html: errorMsg
+        })
+        return
+    }
+
     var errorMsg = "";
     for (var index = 0; index < myArray.length; index++) {
         if (isNaN(myArray[index])) {
@@ -24,8 +46,8 @@ $("#bntSun").on("click", function () {
     }
 
     let tallest = myArray[0];
-    let happy = "What a beautiful sight";
-    let sad = "Sorry you came up short";
+    let happy = " <span class = 'happy'> YEAH SUN! </span> " ;
+    let sad =  "<span class='sad'>Boo no sun </span>";
     let newArray = [];
 
     newArray.push(happy);
