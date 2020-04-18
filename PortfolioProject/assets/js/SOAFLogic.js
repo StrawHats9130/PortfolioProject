@@ -11,14 +11,24 @@ $("#btnSOAF").on("click", function () {
 
     var errorMsg = "";
     for (var index = 0; index < myArray.length; index++) {
-        if (isNaN(myArray[index]) || isNaN(k) || k==0 ){
-            var value = $(`#hillsInput${index + 1}`).val();
+        if (isNaN(myArray[index])) {
+            var value = $(`#soafInput${index + 1}`).val();
             errorMsg += `Your input in position ${index + 1}: ${value} is bad and needs to be fixed \n\r`;
-            $(`#hillsInput${index + 1}`).val("");
+            $(`#soafInput${index + 1}`).val("");
         }
     }
+    if (isNaN(k) || k == 0) {
+        var value = $(`#soafInput${index + 1}`).val();
+        errorMsg += `Your input in position ${index + 1}: ${value} is bad and needs to be fixed \n\r`;
+        $(`#soafInput${index + 1}`).val("");
+    }
     if (errorMsg !== "") {
-        alert(errorMsg);
+        Swal.fire({
+            icon: 'error',
+            title: 'Input Validation failed',
+            html: errorMsg
+
+        })
         return
     }
 
