@@ -255,64 +255,55 @@
                     <!--Modal Fizz - Buzz-->
 
                     <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalFizzBuzz">
-                            Open modal Fizz Buzz
-                        </button>
-
+                        <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalFizzBuzz">Open modal Fizz Buzz-->
+                        <!--</button>-->
+                        <img src="assets/img/MyPics/BuzzPic.jpg" data-toggle="modal" data-target="#modalFizzBuzz" />
                         <!-- The Modal -->
                         <div class="modal" id="modalFizzBuzz">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
 
-                                    <!-- Modal Header -->
-                                    <!--<div class="modal-header">
-                                        <h4 class="modal-title">Fizz-Buzz</h4>
-                                        <div class="row">
-                                            <div class="col">
-                                            </div>
-                                        </div>
-                                    </div>-->
+
                                     <!-- Modal body -->
-                                    <div class="modal-body">
+                                    <div class="modal-body" id="FizzBuzzModalBody">
 
                                         <div class="row">
                                             <div class="col">
-
                                                 <div class="row">
                                                     <div class="col">
                                                         <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                        <h2>FIZZBUZZ</h2>
-                                                        <h2>Give us 2 numbers and we can check to see if they are multiples of any number betwwen 1 -100</h2>
-
+                                                        <h1 style="text-align:center; color:blueviolet"> Fizz-Buzz  </h1>
+                                                        <p class="" style="text-align:center; color:black;">Give 2 numbers and we can check to see if they are multiples of numbers between 1 -100</p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-3"></div>
+                                                    <div class="col-3">
+                                                        <input type="number" id="fizz" class="form-control  clearMe" placeholder="Enter Fizz" />
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <input type="number" class="form-control  clearMe" id="buzz" placeholder="Enter Buzz" />
                                                     </div>
                                                 </div>
                                                 <br />
                                                 <div class="row">
                                                     <div class="col">
-                                                        <input type="number" id="fizz" class="border clearMe" placeholder="Enter Number Fizz" />
-
+                                                        <button id="bntBuzzIt" class="btn btn-outline-success ">Buzz It</button>
                                                     </div>
                                                     <div class="col">
-                                                        <input type="number" class="border clearMe" id="buzz" placeholder="Enter Number Buzz" />
+                                                        <button class="btn btn-outline-success " id="btnShowFizzBuzz">Show Code</button>
+                                                    </div>
+                                                    <div class="col">
+                                                        <button class="btn btn-outline-danger " id="btnClearFizzBuzz" style="width:100%;">Clear Me</button>
                                                     </div>
                                                 </div>
+                                                <br />
                                                 <div class="row">
                                                     <div class="col">
                                                         <p id="output"></p>
                                                     </div>
                                                 </div>
                                                 <br />
-                                                <div class="row">
-                                                    <div class="col">
-                                                        <button id="bntBuzzIt" class="btn btn-outline-success bnt-wide ">Buzz It</button>
-                                                    </div>
-                                                    <div class="col">
-                                                        <button class="btn btn-outline-dark btn-wide" id="btnShowFizzBuzz">Show Code</button>
-                                                    </div>
-                                                    <div class="col">
-                                                        <button class="btn btn-outline-danger btn-wide" id="btnClearFizzBuzz">Clear Me</button>
-                                                    </div>
-                                                </div>
                                                 <div class="row">
                                                     <div class="col">
                                                         <div id="FizzBuzzCode">
@@ -351,28 +342,20 @@
                                                         </div>
                                                     </div>
                                                 </div>
-
                                             </div>
-
                                         </div>
-
-
-
-                                        <!-- Modal footer -->
-
-
                                     </div>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                     <!--End Modal Code Fizz - Buzz-->
                     <!--Modal TacoCat-->
                     <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalTacoCat">
+                        <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalTacoCat">
                             Open modal TacoCat
-                        </button>
+                        </button>-->
+                        <img src="assets/img/MyPics/TacoCat.jpg" data-toggle="modal" data-target="#modalTacoCat" />
                         <!-- The Modal -->
                         <div class="modal" id="modalTacoCat">
                             <div class="modal-dialog modal-lg">
@@ -391,7 +374,8 @@
                                             <div class="row">
 
                                                 <div class="col" style="text-align-last:center">
-                                                    <input id="txtTacoCat" class="clearMe" type="text" style=" border-color: deeppink; background: border-box" placeholder=" Palidrome Text Here" />
+
+                                                    <input id="txtTacoCat" class=" form-control clearMe" type="text" style=" border-color: deeppink; background: border-box" placeholder=" Palidrome Text Here" />
                                                 </div>
                                             </div>
                                             <br />
@@ -406,7 +390,7 @@
                                                     <button id="btnTacoCatClear" class="btn btn-outline-danger My100WidthBtn" style=" border-color: tomato;  color: #903030; color: #d51212fc;">Clear Text</button>
                                                 </div>
                                             </div>
-                                            <br/>
+                                            <br />
                                             <div class="row">
                                                 <div class="col">
                                                     <p id="tcOutput" class="clearMe" style=" color: indianred; color: initial; text-align: center;"></p>
@@ -452,9 +436,10 @@
                     <!--End Modal TacoCat-->
                     <!--Modal Sum Of All Fears-->
                     <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalSOAF">
+                        <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalSOAF">
                             Open modal Sum Of All Fears
-                        </button>
+                        </button>-->
+                        <img src="assets/img/MyPics/SOAF.jpg" data-toggle="modal" data-target="#modalSOAF" />
                         <!-- The Modal -->
                         <div class="modal" id="modalSOAF">
                             <div class="modal-dialog modal-lg">
@@ -509,7 +494,7 @@
                                                     <button class="btn btn-outline-danger btn-wide" style="width:100%" id="btnClearSOAF">Clear</button>
                                                 </div>
                                             </div>
-                                            <br/>
+                                            <br />
                                             <div class="row">
                                                 <div class="col">
                                                     <p id="soafOutput" class="SOAFInputs" style="font-size:larger"></p>
@@ -568,9 +553,13 @@
                     <!--End Modal Sum Of All Fears-->
                     <!--Modal Sunset Hills-->
                     <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalSunSetHills">
-                            Open modal Sunset Hills
-                        </button>
+                        <div class="container-fluid">
+                            <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalSunSetHills">
+                                Open modal Sunset Hills
+                            </button>-->
+                            <img src="assets/img/MyPics/Sunset.jpg" data-toggle="modal" data-target="#modalSunSetHills" />
+                        </div>
+
                         <!-- The Modal -->
                         <div class="modal" id="modalSunSetHills">
                             <div class="modal-dialog modal-lg">
@@ -583,7 +572,7 @@
                                     <div class="modal-body">
                                         <div class="row ">
                                             <div class="col">
-                                                <button type="button"style="color:snow" class="close" data-dismiss="modal">&times;</button>
+                                                <button type="button" style="color:snow" class="close" data-dismiss="modal">&times;</button>
                                                 <h1 class=" SunSetHeader ">Sun Set Hills:</h1>
                                                 <p style="font-size:larger; color:gold">Give the heights of 6 building to see if you can see the sunset from left to right.</p>
 
@@ -617,7 +606,7 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-5 ">
-                                                <button class="btn btn-outline-success "  id="bntSun"> See The Sun</button>
+                                                <button class="btn btn-outline-success " id="bntSun"> See The Sun</button>
                                             </div>
                                             <div class="col">
                                                 <button class="btn btn-outline-primary " style="width:100%; border-color:blue; color:blue;" id="btnShowHills">Show Code</button>

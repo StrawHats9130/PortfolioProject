@@ -22,7 +22,6 @@
 
 #footer {
     background-image: url('../img/MyPics/landscape.jpg');
-   
     /*background: url("../img/footer-bg.jpg") top center no-repeat;*/
     /*background-size: cover;
     color: #fff;
@@ -32,29 +31,57 @@
     position: relative;*/
 }
 
-.Fizz{
-    color:crimson;
+.Fizz {
+    color: crimson;
+    font-size:large;
 }
 
-.Buzz{
-    color: greenyellow;
+.Buzz {
+    color: darkblue;
+    font-size:large
 }
 
+.FizzBuzz {
+    color: deeppink;
+    font-size:larger;
+
+}
+.NoFizzBuzz{
+    color:aqua;
+
+}
+
+#FizzBuzzModalBody {   
+  background-image: linear-gradient(45deg, #2196F3, #FFEB3B);   
+
+}
+
+#bntBuzzIt{
+    width:100%;
+    color:darkgreen;
+    border-color:currentColor;
+}
+
+#btnShowFizzBuzz{
+    width:100%;
+    color:darkmagenta;
+    border-color:currentColor;
+
+}
 
 
 .happy {
     color: #d8ff00;
 }
 
-.sad{
-    color:seashell;
-
+.sad {
+    color: seashell;
 }
 
-#btnClearHills{
-    color:aliceblue;
-    border-color:aliceblue;
-        width:100%;
+#btnClearHills {
+    color: aliceblue;
+    border-color: aliceblue;
+    width: 100%;
 }
 
 #bntSun {
@@ -66,30 +93,30 @@
 .SunsetError {
     color: crimson;
 }
-.SunSetHeader{
-    color:gold;
-    text-align:center;
+
+.SunSetHeader {
+    color: gold;
+    text-align: center;
 }
+
 .SunSetHeaderp {
     color: darkgoldenrod;
-   
 }
 
 .SOAFHeaderCol {
-   
-    background-color: #4672a2;   
+    background-color: #4672a2;
     color: #ce8e12;
-    box-shadow: inset 0px -1px 20px 10px black;  
-
-}
-.My100WidthBtn{
-    width:100%;
+    box-shadow: inset 0px -1px 20px 10px black;
 }
 
+.My100WidthBtn {
+    width: 100%;
+}
 
-.SOAFInputs{
-    border-color:goldenrod;
-        text-align:center;
+
+.SOAFInputs {
+    border-color: goldenrod;
+    text-align: center;
 }
 
 .storageTempForUse {
@@ -133,13 +160,10 @@
     color: initial;
     text-align: center;
 ">…</p>*/
-
     /*color: #d8ff00*/
-
-/*<button class="btn btn-outline-success bnt-wide " id="bntSun" style="
+    /*<button class="btn btn-outline-success bnt-wide " id="bntSun" style="
     width: 100%;
     color: darkgreen;
     border-color: darkgreen;
 ">Where Can I See The Sun</button>K*/
-
 }

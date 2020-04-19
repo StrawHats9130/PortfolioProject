@@ -31,22 +31,22 @@ function FindFizzBuzz(fizz, buzz) {
         if (i % fizz == 0 && i % buzz == 0) {
             //add FizzBuzz to Array
             // fizzBuzz.push("FizzBuzz");
-            fizzBuzz += "FizzBuzz ";
+            fizzBuzz += " <span class = 'FizzBuzz'> Fizz-Buzz </span>"+ ", ";
         }
         else if (i % fizz == 0) {
             //add fizz to array
             //fizzBuzz.push("Fizz");
-            fizzBuzz += "Fizz ";
+            fizzBuzz += " <span class = 'Fizz'> Fizz </span>" + ", ";
         }
         else if (i % buzz == 0) {
             //Add buzz to array
             //fizzBuzz.push("buzz");
-            fizzBuzz += "buzz ";
+            fizzBuzz += " <span class = 'Buzz'> Buzz </span>" + ", ";
         }
         else if (i % fizz != 0 && i % buzz != 0) {
             //Add "i" to array
             //fizzBuzz.push(toString(i));
-            fizzBuzz += i + " ";
+            fizzBuzz +=`<span class = " NoFizzBuzz ">${i}</span> , `;
         }
 
     }
