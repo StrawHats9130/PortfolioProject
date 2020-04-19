@@ -43,25 +43,36 @@
 
 
 .happy {
-    color: darkorange;
+    color: #d8ff00;
 }
 
 .sad{
-    color:grey;
+    color:seashell;
 
 }
 
+#btnClearHills{
+    color:aliceblue;
+    border-color:aliceblue;
+        width:100%;
+}
 
-.SunsetError{
-    color:crimson;
+#bntSun {
+    width: 100%;
+    color: darkgreen;
+    border-color: darkgreen;
+}
+
+.SunsetError {
+    color: crimson;
 }
 .SunSetHeader{
-    color:darkorange;
-
+    color:gold;
+    text-align:center;
 }
-.SunSetHeader {
+.SunSetHeaderp {
     color: darkgoldenrod;
-    background-image: linear-gradient(to top right,yellow, red, blue);
+   
 }
 
 .SOAFHeaderCol {
@@ -81,7 +92,7 @@
         text-align:center;
 }
 
-.storageTempForUse{
+.storageTempForUse {
     /*Fades background to black to white to black
     background-image: linear-gradient(to right, #000000c9, transparent,#000000c9);
 
@@ -123,5 +134,12 @@
     text-align: center;
 ">…</p>*/
 
+    /*color: #d8ff00*/
 
- }
+/*<button class="btn btn-outline-success bnt-wide " id="bntSun" style="
+    width: 100%;
+    color: darkgreen;
+    border-color: darkgreen;
+">Where Can I See The Sun</button>K*/
+
+}
