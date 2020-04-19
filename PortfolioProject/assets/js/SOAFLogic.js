@@ -18,9 +18,10 @@ $("#btnSOAF").on("click", function () {
         }
     }
     if (isNaN(k) || k == 0) {
-        var value = $(`#soafInput${index + 1}`).val();
-        errorMsg += `Your input in position ${index + 1}: ${value} is bad and needs to be fixed \n\r`;
-        $(`#soafInput${index + 1}`).val("");
+        var value = $(`#k`).val();
+        if (value == "") value = "empty";
+        errorMsg += `Your input in position k is ${value}, so please fix it.  \n\r`;
+        $(`#k`).val("");
     }
     if (errorMsg !== "") {
         Swal.fire({

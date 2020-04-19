@@ -32,13 +32,15 @@
     position: relative;*/
 }
 
-.SunsetError{
+.Fizz{
     color:crimson;
 }
-.SunSetHeader{
-    color:darkorange;
 
+.Buzz{
+    color: greenyellow;
 }
+
+
 
 .happy {
     color: darkorange;
@@ -49,6 +51,76 @@
 
 }
 
-.Fizz{
+
+.SunsetError{
     color:crimson;
 }
+.SunSetHeader{
+    color:darkorange;
+
+}
+.SunSetHeader{
+    color:darkgoldenrod;
+}
+
+.SOAFHeaderCol {
+   
+    background-color: #4672a2;   
+    color: #ce8e12;
+    box-shadow: inset 0px -1px 20px 10px black;  
+
+}
+.My100WidthBtn{
+    width:100%;
+}
+
+
+.SOAFInputs{
+    border-color:goldenrod;
+        text-align:center;
+}
+
+.storageTempForUse{
+    /*Fades background to black to white to black
+    background-image: linear-gradient(to right, #000000c9, transparent,#000000c9);
+
+    Style for outputbox tacocat
+    border-color: deeppink;
+    background: border-box;
+   
+   <h2 style="
+    text-align: center;
+    color: initial;
+" h1>Taco Cat</h2>
+   
+
+
+<button type="button" class="close" data-dismiss="modal" style="
+    color: lime;
+">×</button>
+
+<button id="btnTacoCat" class="btn btn-outline-success My100WidthBtn" style="
+    border-color: aqua;
+    color: chartreuse;
+  
+    color: springgreen;
+">Enlighten Me</button>
+
+<button class="btn btn-outline-primary My100WidthBtn" id="btnShowTacoCat" style="
+    border-color: blue;
+">Show Code</button>
+
+<button id="btnTacoCatClear" class="btn btn-outline-danger My100WidthBtn" style="
+    border-color: tomato;
+    color: #903030;
+    color: #d51212fc;
+">Clear Text</button>
+
+<p id="tcOutput" class="clearMe" style="
+    color: indianred;
+    color: initial;
+    text-align: center;
+">…</p>*/
+
+
+ }

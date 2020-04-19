@@ -29,7 +29,6 @@
     <link href="assets/css/style.css" rel="stylesheet">
     <link href="assets/css/myStyle.css" rel="stylesheet" />
     <!--<link href="Content/sweetalert.css" rel="stylesheet" />-->
-
     <!-- =======================================================
     * Template Name: Laura - v2.0.0
     * Template URL: https://bootstrapmade.com/laura-free-creative-bootstrap-theme/
@@ -358,7 +357,7 @@
                                         </div>
 
 
-                                       
+
                                         <!-- Modal footer -->
 
 
@@ -377,38 +376,39 @@
                         <!-- The Modal -->
                         <div class="modal" id="modalTacoCat">
                             <div class="modal-dialog modal-lg">
-                                <div class="modal-content">
+                                <div class="modal-content" style=" background-image: linear-gradient(to right, #000000c9, transparent,#000000c9)">
                                     <!-- Modal Header -->
                                     <!-- Modal body -->
                                     <div class="modal-body">
                                         <div class="container-fluid">
-                                            <div class="row">
+                                            <div class="row" style="text-align:center; color:initial ">
                                                 <div class="col">
-                                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                                    <h2>Taco Cat</h2>
-                                                    <h4>Palidrome is a word, number, phrase or other characters which reads the same forwards or backwards.</h4>
+                                                    <button type="button" class="close" style=" color: lime" data-dismiss="modal">&times;</button>
+                                                    <h1>Taco Cat</h1>
+                                                    <h4 style=" color: initial">Palidrome is a word, number, phrase or other characters which reads the same forwards or backwards.... Taco Cat.</h4>
                                                 </div>
                                             </div>
                                             <div class="row">
-                                                <div class="col text-center h2">Taco Cat Exercise</div>
+
+                                                <div class="col" style="text-align-last:center">
+                                                    <input id="txtTacoCat" class="clearMe" type="text" style=" border-color: deeppink; background: border-box" placeholder=" Palidrome Text Here" />
+                                                </div>
+                                            </div>
+                                            <br />
+                                            <div class="row">
+                                                <div class="col">
+                                                    <button id="btnTacoCat" style=" border-color: aqua; color: chartreuse; color: springgreen;" class="btn btn-outline-success My100WidthBtn">Enlighten Me</button>
+                                                </div>
+                                                <div class="col">
+                                                    <button class="btn btn-outline-primary My100WidthBtn" style="border-color: blue;" id="btnShowTacoCat">Show Code</button>
+                                                </div>
+                                                <div class="col">
+                                                    <button id="btnTacoCatClear" class="btn btn-outline-danger My100WidthBtn" style=" border-color: tomato;  color: #903030; color: #d51212fc;">Clear Text</button>
+                                                </div>
                                             </div>
                                             <div class="row">
                                                 <div class="col">
-                                                    <input id="txtTacoCat" class="clearMe" type="text" placeholder=" Palidrome Text Here" />
-                                                </div>
-                                                <div class="col">
-                                                    <button id="btnTacoCat" class="btn btn-success">Enlighten Me</button>
-                                                </div>
-                                                <div class="col">
-                                                    <button class="btn btn-primary btn-wide" id="btnShowTacoCat">Show Code</button>
-                                                </div>
-                                                <div class="col">
-                                                    <button id="btnTacoCatClear" class="btn btn-danger">Clear Text</button>
-                                                </div>
-                                            </div>
-                                            <div class="row">
-                                                <div class="col">
-                                                    <p id="tcOutput" class="clearMe"></p>
+                                                    <p id="tcOutput" class="clearMe" style=" color: indianred; color: initial; text-align: center;"></p>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -459,63 +459,59 @@
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
                                     <!-- Modal Header -->
-                                    <div class="modal-header">
-                                        <!--<h4 class="modal-title">Fizz-Buzz</h4>-->
-                                        <div class="row">
-                                            <div class="col">
-                                                <h2>Sum Of All Fears</h2>
-                                                <h2>Give us a value for K and some numbers an lets see if we can find a pair that add up.</h2>
-                                            </div>
-                                        </div>
-                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                    </div>
                                     <!-- Modal body -->
-                                    <div class="modal-body">
+                                    <div class="modal-body ">
                                         <div class="container">
                                             <div class="row">
-                                                <div class="col text-center h2">Sum of all fears Exercise</div>
+
+                                                <div class="col text-center SOAFHeaderCol">
+                                                    <button type="button" class="close" style="color:darkgoldenrod" data-dismiss="modal">&times;</button>
+                                                    <h1 class=" SOAFHeader">Sum Of All Fears</h1>
+                                                    <p>Give us a value for K and some numbers an lets see if we can find a pair that add up.</p>
+
+                                                </div>
                                             </div>
                                             <br />
                                             <div class="row ">
                                                 <div class="offset-4 col-4">
-                                                    <input class="form-control clearMeSOAF" id="k" type="text" placeholder="Enter K" />
+                                                    <input class="form-control SOAFInputs clearMeSOAF" id="k" type="text" placeholder="Enter K" />
                                                 </div>
                                             </div>
                                             <br />
                                             <div class="row">
                                                 <div class="col">
-                                                    <input id="soafInput1" class="form-control clearMeSOAF" placeholder="Number 1" type="text" />
+                                                    <input id="soafInput1" class="form-control  SOAFInputs clearMeSOAF" placeholder="Number 1" type="text" />
                                                 </div>
                                                 <div class="col">
-                                                    <input id="soafInput2" class="form-control clearMeSOAF " placeholder="Number 2" type="text" />
+                                                    <input id="soafInput2" class="form-control SOAFInputs clearMeSOAF " placeholder="Number 2" type="text" />
                                                 </div>
                                                 <div class="col">
-                                                    <input id="soafInput3" class="form-control clearMeSOAF" placeholder="Number 3" type="text" />
+                                                    <input id="soafInput3" class="form-control SOAFInputs clearMeSOAF" placeholder="Number 3" type="text" />
                                                 </div>
                                                 <div class="col">
-                                                    <input id="soafInput4" class="form-control clearMeSOAF" placeholder="Number 4" type="text" />
+                                                    <input id="soafInput4" class="form-control SOAFInputs clearMeSOAF" placeholder="Number 4" type="text" />
                                                 </div>
                                                 <div class="col">
-                                                    <input id="soafInput5" class="form-control clearMeSOAF" placeholder="Number 5" type="text" />
+                                                    <input id="soafInput5" class="form-control SOAFInputs clearMeSOAF" placeholder="Number 5" type="text" />
                                                 </div>
                                             </div>
                                             <br />
 
                                             <div class="row">
                                                 <div class="col">
-                                                    <button class="btn btn-success btn-wide bnt-width-100%" id="btnSOAF">Check </button>
+                                                    <button class="btn btn-outline-success  " style="width:100%" id="btnSOAF">Check </button>
                                                 </div>
                                                 <div class="col">
-                                                    <button class="btn btn-primary btn-wide" id="btnShowSOAF">Show Code</button>
+                                                    <button class="btn btn-outline-primary bnt-wide" style="width:100%" id="btnShowSOAF">Show Code</button>
                                                 </div>
                                                 <div class="col">
-                                                    <button class="btn btn-danger btn-wide " id="btnClearSOAF">Clear</button>
+                                                    <button class="btn btn-outline-danger btn-wide" style="width:100%" id="btnClearSOAF">Clear</button>
                                                 </div>
                                             </div>
-
+                                            <br/>
                                             <div class="row">
                                                 <div class="col">
-                                                    <p id="soafOutput"></p>
+                                                    <p id="soafOutput" class="SOAFInputs"></p>
                                                 </div>
                                             </div>
 
@@ -561,7 +557,7 @@
                                             </div>
                                         </div>
                                         <!-- Modal footer -->
-                                        
+
 
                                     </div>
                                 </div>
