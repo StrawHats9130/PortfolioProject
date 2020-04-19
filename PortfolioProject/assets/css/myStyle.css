@@ -59,8 +59,9 @@
     color:darkorange;
 
 }
-.SunSetHeader{
-    color:darkgoldenrod;
+.SunSetHeader {
+    color: darkgoldenrod;
+    background-image: linear-gradient(to top right,yellow, red, blue);
 }
 
 .SOAFHeaderCol {
