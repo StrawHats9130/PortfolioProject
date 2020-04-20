@@ -83,6 +83,8 @@
     <Content Include="assets\img\MyPics\MyPic-2.jpg" />
     <Content Include="assets\img\MyPics\MyPic-3.png" />
     <Content Include="assets\img\MyPics\MyPicPort.jpg" />
+    <Content Include="assets\img\MyPics\POW-apple-touch-icon.png" />
+    <Content Include="assets\img\MyPics\POWfavicon-32x32.png" />
     <Content Include="assets\img\MyPics\SOAF.jpg" />
     <Content Include="assets\img\MyPics\Sunset.jpg" />
     <Content Include="assets\img\MyPics\TacoCat.jpg" />
