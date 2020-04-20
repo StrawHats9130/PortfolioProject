@@ -73,14 +73,8 @@
     <Content Include="assets\css\style.css" />
     <Content Include="assets\img\apple-touch-icon.png" />
     <Content Include="assets\img\favicon.png" />
-    <Content Include="assets\img\footer-bg.jpg" />
-    <Content Include="assets\img\hero-bg.jpg" />
-    <Content Include="assets\img\me.jpg" />
     <Content Include="assets\img\MyPics\BuzzPic.jpg" />
-    <Content Include="assets\img\MyPics\Fizz.jpg" />
     <Content Include="assets\img\MyPics\landscape.jpg" />
-    <Content Include="assets\img\MyPics\MyPic-1.jpg" />
-    <Content Include="assets\img\MyPics\MyPic-2.jpg" />
     <Content Include="assets\img\MyPics\MyPic-3.png" />
     <Content Include="assets\img\MyPics\MyPicPort.jpg" />
     <Content Include="assets\img\MyPics\POW-apple-touch-icon.png" />
@@ -97,7 +91,6 @@
     <Content Include="assets\img\portfolio\portfolio-7.jpg" />
     <Content Include="assets\img\portfolio\portfolio-8.jpg" />
     <Content Include="assets\img\portfolio\portfolio-9.jpg" />
-    <Content Include="assets\img\testimonials-bg.jpg" />
     <Content Include="assets\js\FizzBuzz.js" />
     <Content Include="assets\js\main.js" />
     <Content Include="assets\js\shBrushJScript.js" />
