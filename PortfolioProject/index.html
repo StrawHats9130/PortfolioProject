@@ -17,9 +17,15 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Satisfy" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
+
+
+
+
     <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <!--<link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">-->
+    <link href="Content/icofont.min.css" rel="stylesheet" />
+    <!--<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">-->
+    <link href="Content/boxicons.min.css" rel="stylesheet" />
     <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
     <link href="assets/css/shCore.css" rel="stylesheet" />
@@ -49,8 +55,7 @@
                 <li><a href="#resume">Resume</a></li>
                 <li><a href="#services">Challenges</a></li>
                 <li><a href="#portfolio">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-
+               
             </ul>
         </nav><!-- .nav-menu -->
 
@@ -81,7 +86,7 @@
                     <div class="col-lg-8 d-flex flex-column align-items-stretch">
                         <div class="content pl-lg-4 d-flex flex-column justify-content-center">
                             <div class="row">
-                                <div class="col-lg-6">
+                                <div class="col-lg-5">
                                     <ul>
                                         <li><i class="icofont-rounded-right"></i> <strong>Name:</strong> Benjamin Yarema</li>
                                         <!--<li><i class="icofont-rounded-right"></i> <strong>Website:</strong> www.example.com </li>
@@ -90,7 +95,7 @@
                                         <li><i class="icofont-rounded-right"></i> <strong>City:</strong> City : Sanford, FL </li>
                                     </ul>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-7">
                                     <ul>
 
                                         <!--<li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 41</li>
@@ -102,7 +107,13 @@
                                 </div>
                                 <div class="row">
                                     <div class="col ">
-                                        <p>I am a  Marine that is a hard working, dedicated, team player. I've been married for twenty years and enjoy spending time with friends and family. We do things like watching anime, playing games, and going to the movies. In my free time, I enjoy going on adventures with my wife and any of my kids that want to come along. </p>
+                                        <p>
+                                            I am a Marine that is a hard working, dedicated, team player. I am a very loyal person that can be depened
+                                            on. I have been a driller for the past 4 years, and while I enjoyed working in many different places and meeting new people,
+                                            I found it hard because I missed being home with my family. I was introduced to coding by a close friend of mine and found it
+                                            really intrested me and was something I could do and love. The use of strongly typed coding languages to solve software issues,
+                                            is like solving a really complext riddle. Afterwards the sence of accomplishment is beyond belief.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -145,24 +156,34 @@
                             <p><em>Evans High School, Orlando, FL</em></p>
                             <!--<p></p>-->
                         </div>
-                        
+
                     </div>
                     <div class="col-lg-6">
                         <h3 class="resume-title">Professional Experience</h3>
-                        <!--<div class="resume-item">
-                            <h4>Full Stack Developer</h4>
-                            <h5>2020 - Present</h5>
-                            
+                        <div class="resume-item">
+                            <h4>Web Software Engineer</h4>
+                            <h5>April 2020 - June 2020</h5>
+
                             <p><em>Coder Foundry, Kernersville, NC </em></p>
                             <p>
                                 <ul>
-                                    <li>Operate equipment such as GeoProbes, Bob Cats, Forklifts </li>
-                                    <li>Preforms clerical duties such as Well Logs and Expenses Reports </li>
-                                    <li>Transport equipment using commercial vehicles</li>
-                                    <li>Manage jobs to ensure completion in a timely manner</li>
+                                    <li>Created three primary projects, including: </li>
+                                    <li>A portfolio site using C#, MVC, HTML5, CSS3, BOOTSTRAP, JS, & jQuery </li>
+                                    <li>
+                                        A Financial Portal implemented in three phases. Phase 1: an MVC Web
+                                        Application, Phase 2: a Web Service that utilizes Swagger and Swashbuckle for
+                                        integrated testing, Phase 3: A cross platform Xamarin Mobile Application.
+                                    </li>
+                                    <li>
+                                        Fully designed and developed a multi-functional issue tracker web application,
+                                        implementing enhanced roles & security, which also used a Code First Relational
+                                        database designed and modeled in SQL Server. Technologies used include: .Net
+                                        Framework v. 4.6.1, MVC5, C#, LINQ, SQL, Entity Framework, jQuery DataTables
+                                    </li>
+
                                 </ul>
                             </p>
-                        </div>-->
+                        </div>
                         <div class="resume-item">
                             <h4>Driller</h4>
                             <h5>2016 - Present</h5>
@@ -272,7 +293,7 @@
                                                     <div class="col">
                                                         <button class="btn btn-outline-success " id="btnShowFizzBuzz">Show Code</button>
                                                     </div>
-                                                    <div class="col " >
+                                                    <div class="col ">
                                                         <button class="btn btn-outline-danger " id="btnClearFizzBuzz" style="width:100%;">Clear Me</button>
                                                     </div>
                                                 </div>
@@ -676,7 +697,7 @@
                 <ul id="portfolio-flters" class="d-flex justify-content-center">
                     <li data-filter="*" class="filter-active">All</li>
                     <li data-filter=".filter-app">Blog</li>
-                    <li data-filter=".filter-card">Defect Tracker</li>
+                    <li data-filter=".filter-card">Bug Tracker</li>
                     <li data-filter=".filter-web">Finacial MVC</li>
                     <li data-filter=".filter-dog">Financial API</li>
                 </ul>
@@ -738,7 +759,7 @@
             </div>
         </section><!-- End My Portfolio Section -->
         <!-- ======= Contact Me Section ======= -->
-      KC
+        KC
     </main><!-- End #main -->
     <!-- ======= Footer ======= -->
     <footer id="footer">
